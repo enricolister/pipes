@@ -1,7 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+
+import localeIt from '@angular/common/locales/it';
+import { registerLocaleData } from '@angular/common';
+registerLocaleData(localeIt);
 
 @NgModule({
   declarations: [
@@ -10,7 +14,9 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    { provide: LOCALE_ID, useValue: 'it'}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
