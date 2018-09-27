@@ -7,13 +7,15 @@ import localeIt from '@angular/common/locales/it';
 import { registerLocaleData } from '@angular/common';
 
 import { CapitalizadoPipe } from './pipes/capitalizado.pipe';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 
 registerLocaleData(localeIt);
 
 @NgModule({
   declarations: [
     AppComponent,
-    CapitalizadoPipe
+    CapitalizadoPipe,
+    DomseguroPipe
   ],
   imports: [
     BrowserModule
