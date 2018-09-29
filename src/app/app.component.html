@@ -15,6 +15,20 @@
 
     <tr>
       <td>{{ nombre }}</td>
+			<td> contrasena: {{ activar }} </td>
+			<td>{{ nombre | contrasena:activar }}</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="2">
+        <button (click)="activar = !activar" type="button" class="btn btn-outline-primary">
+          Activar / Desactivar
+        </button>
+      </td>
+    </tr>
+
+    <tr>
+      <td>{{ nombre }}</td>
 			<td> uppercase</td>
 			<td>{{ nombre | uppercase }}</td>
     </tr>

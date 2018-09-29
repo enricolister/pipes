@@ -30,4 +30,6 @@ export class AppComponent {
 
   video = 'ZnDRMvf8qPo';
 
+  activar = true;
+
 }
